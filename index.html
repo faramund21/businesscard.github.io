@@ -11,7 +11,7 @@
 		<!-- <script>new WOW().init();</script> -->
 	</head>
 	
-	<body class="page__body">
+	<body class="page__body"id="top">
 		<header class="page-header">
 			<nav class="main-nav main-nav--closed main-nav--nojs">
 				<button class="main-nav__toggle" type="button">
@@ -22,12 +22,12 @@
 				<div class="main-nav__wrapper">
 					<ul class="main-nav__list nav-list">					
 						<li class="nav-list__item nav-list__item--active">
-							<a href="#information">
+							<a href="#top">
 								В начало
 							</a>
 						</li>
 						<li class="nav-list__item nav-list__item--active">
-							<a href="#information">
+							<a href="#personal-info">
 								Личная информация
 							</a>
 						</li>
@@ -37,7 +37,7 @@
 							</a>
 						</li>
 						<li class="nav-list__item nav-list__item--active">
-							<a href="#tech">
+							<a href="#technical-skills">
 								Технические навыки
 							</a>
 						</li>
@@ -62,7 +62,9 @@
 		</header>
 		
 		<main class="page-main">
-			<h1 class="visually-hidden">Сайт-визитка адаптивная версия</h1>
+			<h1 class="visually-hidden">
+				Сайт-визитка адаптивная версия
+			</h1>
 			
 			<section class="foto-info">
 				<a class="foto-info__foto-location">
@@ -101,146 +103,231 @@
 						</a>
 					</li>
 				</ul>
-				<div class="foto-info__line line"></div>
+				<div class="foto-info__line line">
+				</div>
 				<ul class="foto-info__contact-list contact-list">
 					<li class="contact-list__item contact-list__item--active">
-						<h3>Адрес</h3>
-						<a class="button" href="map.html">Чита, Россия</a>
+						<h3>
+							Адрес
+						</h3>
+						<a class="button" href="map.html">
+							Чита, Россия
+						</a>
 					</li>
 					<li class="contact-list__item contact-list__item--active">
-						<h3>Телефон</h3>
-						<a class="button" href="tel:+79141292995">+7(914)1292995</a>
+						<h3>
+							Телефон
+						</h3>
+						<a class="button" href="tel:+79141292995">
+							+7(914)1292995
+						</a>
 					</li>
 					<li class="contact-list__item contact-list__item--active">
-						<h3>Email</h3>
-						<a class="button" href="mailto:faramund21@rambler.ru">faramund21@rambler.ru</a>
+						<h3>
+							Email
+						</h3>
+						<a class="button" href="mailto:faramund21@rambler.ru">
+							faramund21@rambler.ru
+						</a>
 					</li>
 				</ul>
 			</section>
 			
-			<!-- <section class="personal-information"> -->
-				<!-- <p><a name="information"></a></p> -->
-				<!-- <div class="left-column"> -->
-					<!-- <h2>Личная информация</h2> -->
-					<!-- <p class="left">Кто я</p> -->
-				<!-- </div> -->
-				<!-- <p class="PI-description"> -->
-				<!-- 38 лет, женат, двое детей,<br> -->
-				<!-- коммуникабельный, проактивный,<br> -->
-				<!-- стрессоустойчивый,<br> -->
-				<!-- в работе нацелен на результат -->
-				<!-- </p> -->
-			<!-- </section> -->
+			<section class="personal-info-article" id="personal-info">
+				<div class="personal-info__head head-list">
+					<h2 class="head-list__title">
+						Личная информация
+					</h2>
+					<p class="head-list__description">
+						Кто я
+					</p>
+				</div>
+				<div class="personal-info__body">
+					<p class="body__discription">
+						38 лет, женат, двое детей,<br>
+						коммуникабельный, проактивный,<br>
+						стрессоустойчивый,<br>
+						в работе нацелен на результат
+					</p>
+				</div>
+			</section>
 			
-			<!-- <section class="knowledge"> -->
-				<!-- <p><a name="knowledge"></a></p> -->
-				<!-- <div class="left-column"> -->
-					<!-- <h2>Знания и опыт</h2> -->
-					<!-- <p class="left">Самое начало пути...</p> -->
-				<!-- </div> -->
-				<!-- <ul class="knowledge-list"> -->
-					<!-- <li class="knowledge-item"> -->
-						<!-- <h3><span class="colortext">01</span> javascript</h3> -->
-						<!-- <p>Основы програмирвоания, автор Дмитрий Лаврик</p> -->
-					<!-- </li> -->
-					<!-- <li class="knowledge-item"> -->
-						<!-- <h3><span class="colortext">02</span> html 5.2/CSS</h3> -->
-						<!-- <p>Профессиональный курс HTML и CSS, уровень 1 <br> -->
-						<!-- (2020)[HTML Academy] </p> -->
-					<!-- </li> -->
-					<!-- <li class="knowledge-item"> -->
-						<!-- <h3><span class="colortext">03</span>React Native</h3> -->
-						<!-- <p>Где-то слышал...</p> -->
-					<!-- </li> -->
-				<!-- </ul> -->
-			<!-- </section> -->
+			<section class="knowledge-article" id="knowledge">
+				<div class="knowledge__head head-list">
+					<h2 class="head-list__title">
+						Знания и опыт
+					</h2>
+					<p class="head-list__description">
+						Самое начало пути...
+					</p>
+				</div>
+				<ul class="knowledge__body body-list">
+					<li class="body-item">
+						<h3>
+							<span class="colortext">
+								01
+							</span>
+							javascript
+						</h3>
+						<p>
+							Основы програмирвоания, автор Дмитрий Лаврик
+						</p>
+					</li>
+					<li class="body-item">
+						<h3>
+							<span class="colortext">
+								02
+							</span> 
+							html 5.2/CSS
+						</h3>
+						<p>
+							Профессиональный курс HTML и CSS, уровень 1 <br>
+							(2020)[HTML Academy] 
+						</p>
+					</li>
+					<li class="body-item">
+						<h3>
+							<span class="colortext">
+								03
+							</span>
+							React Native
+						</h3>
+						<p>
+							Где-то слышал...
+						</p>
+					</li>
+				</ul>
+			</section>
 			
-			<!-- <section class="technical-skills"> -->
-				<!-- <p><a name="tech"></a></p> -->
-				<!-- <div class="left-column"> -->
-					<!-- <h2> Технические навыки</h2> -->
-					<!-- <p class="left">Я не волшебник, я только учусь</p> -->
-				<!-- </div> -->
-				<!-- <ul class="TS-list"> -->
-					<!-- <li class="TS-item"> -->
-						<!-- <h3><span class="colortext">50%</span>photoshop</h3> -->
-						<!-- <div class="line-progress"> -->
-							<!-- <div class="line-progress-bar" style="width: 50%"> -->
-								<!-- <div class="line-progress-bar-grow"></div> -->
-							<!-- </div> -->
-						<!-- </div> -->
-					<!-- </li> -->
-					<!-- <li class="TS-item"> -->
-						<!-- <h3><span class="colortext">70%</span>coreldraw</h3> -->
-						<!-- <div class="line-progress"> -->
-							<!-- <div class="line-progress-bar" style="width: 70%"> -->
-								<!-- <div class="line-progress-bar-grow"></div> -->
-							<!-- </div> -->
-						<!-- </div> -->
-					<!-- </li> -->
-					<!-- <li class="TS-item"> -->
-						<!-- <h3><span class="colortext">85%</span>ms office</h3> -->
-						<!-- <div class="line-progress"> -->
-							<!-- <div class="line-progress-bar" style="width: 85%"> -->
-								<!-- <div class="line-progress-bar-grow"></div> -->
-							<!-- </div> -->
-						<!-- </div> -->
-					<!-- </li> -->
-					<!-- <li class="TS-item"> -->
-						<!-- <h3><span class="colortext">40%</span>html, css</h3> -->
-						<!-- <div class="line-progress"> -->
-							<!-- <div class="line-progress-bar" style="width: 40%"> -->
-								<!-- <div class="line-progress-bar-grow"></div> -->
-							<!-- </div> -->
-						<!-- </div> -->
-					<!-- </li> -->
-					<!-- <li class="TS-item"> -->
-						<!-- <h3><span class="colortext">15%</span>javascript</h3> -->
-						<!-- <div class="line-progress"> -->
-							<!-- <div class="line-progress-bar" style="width: 15%"> -->
-								<!-- <div class="line-progress-bar-grow"></div> -->
-							<!-- </div> -->
-						<!-- </div> -->
-					<!-- </li> -->
-					<!-- <li class="TS-item"> -->
-						<!-- <h3><span class="colortext">80%</span>assembler</h3> -->
-						<!-- <div class="line-progress"> -->
-							<!-- <div class="line-progress-bar" style="width: 80%"> -->
-								<!-- <div class="line-progress-bar-grow"></div> -->
-							<!-- </div> -->
-						<!-- </div> -->
-					<!-- </li> -->
-				<!-- </ul> -->
-			<!-- </section> -->
+			<section class="technical-skills-article" id="technical-skills">
+				<div class="technical-skills__head head-list">
+					<h2 class="head-list__title">
+						Технические навыки
+					</h2>
+					<p class="head-list__description">
+						Я не волшебник, я только учусь
+					</p>
+				</div>
+				<ul class="technical-skills__body body-list">
+					<li class="body-item">
+						<h3>
+							<span class="colortext">
+								50%
+							</span>
+							photoshop
+						</h3>
+						<div class="line-progress">
+							<div class="line-progress-bar" style="width: 50%">
+								<div class="line-progress-bar-grow"></div>
+							</div>
+						</div>
+					</li>
+					<li class="body-item">
+						<h3>
+							<span class="colortext">
+								70%
+							</span>
+							coreldraw
+						</h3>
+						<div class="line-progress">
+							<div class="line-progress-bar" style="width: 70%">
+								<div class="line-progress-bar-grow"></div>
+							</div>
+						</div>
+					</li>
+					<li class="body-item">
+						<h3>
+							<span class="colortext">
+								85%
+							</span>
+							ms office
+						</h3>
+						<div class="line-progress">
+							<div class="line-progress-bar" style="width: 85%">
+								<div class="line-progress-bar-grow"></div>
+							</div>
+						</div>
+					</li>
+					<li class="body-item">
+						<h3>
+							<span class="colortext">
+								40%
+							</span>
+							html, css
+						</h3>
+						<div class="line-progress">
+							<div class="line-progress-bar" style="width: 40%">
+								<div class="line-progress-bar-grow"></div>
+							</div>
+						</div>
+					</li>
+					<li class="body-item">
+						<h3>
+							<span class="colortext">
+								15%
+							</span>
+							javascript
+						</h3>
+						<div class="line-progress">
+							<div class="line-progress-bar" style="width: 15%">
+								<div class="line-progress-bar-grow"></div>
+							</div>
+						</div>
+					</li>
+					<li class="body-item">
+						<h3>
+							<span class="colortext">
+								80%
+							</span>
+							assembler
+						</h3>
+						<div class="line-progress">
+							<div class="line-progress-bar" style="width: 80%">
+								<div class="line-progress-bar-grow"></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
 			
-			<!-- <section class="expirience"> -->
-				<!-- <p><a name="expirience"></a></p> -->
-				<!-- <div class="left-column"> -->
-					<!-- <h2>Опыт работы</h2> -->
-					<!-- <p class="left">"Армия - школа жизни"</p> -->
-				<!-- </div> -->
-				<!-- <div class="expirience-right-column"> -->
-					<!-- <ul class="expirience-list"> -->
-						<!-- <li class="expirience-item"> -->
-							<!-- <div class="EI-left"> -->
-								<!-- <div class="EI-left-main"> -->
-									<!-- <p><span class="colortext2">2005 - настоящее время</span></p> -->
-									<!-- <h3>Вооруженные силы РФ</h3> -->
-									<!-- <p>руководящий состав</p> -->
-									<!-- <p><span class="colortext2">Российская Федерация</span></p> -->
-								<!-- </div> -->
-							<!-- </div> -->
-							<!-- <div class="EI-right"> -->
-								<!-- <p>В вооруженных силах Российской Федерации <br> -->
-								<!-- с 2000 года, проходил службу на должностях <br> -->
-								<!-- от технического персонала до руководящих <br> -->
-								<!-- должностей. Умею находить общий язык с <br> -->
-								<!-- подчиненными и организовывать их работу.</p> -->
-							<!-- </div> -->
-						<!-- </li> -->
-					<!-- </ul> -->
-				<!-- </div> -->
-			<!-- </section> -->
+			<section class="expirience-article" id="expirience">
+				<div class="expirience__head head-list">
+					<h2 class="head-list__title">Опыт работы</h2>
+					<p class="head-list__description">"Армия - школа жизни"</p>
+				</div>
+				<ul class="expirience__body body-list">
+					<li class="body-item">
+						<div class="body-item__main">
+							<p>
+								<span class="colortext2">
+									2005 - настоящее время
+								</span>
+							</p>
+							<h3>
+								Вооруженные силы РФ
+							</h3>
+							<p>
+								руководящий состав
+							</p>
+							<p>
+								<span class="colortext2">
+									Российская Федерация
+								</span>
+							</p>
+						</div>
+						<div class="body-item__secondary">
+							<p>
+								В вооруженных силах Российской Федерации <br>
+								с 2000 года, проходил службу на должностях <br>
+								от технического персонала до руководящих <br>
+								должностей. Умею находить общий язык с <br>
+								подчиненными и организовывать их работу.
+							</p>
+						</div>
+					</li>
+				</ul>
+				</div>
+			</section>
 			
 			<!-- <section class="edication"> -->
 				<!-- <p><a name="edication"></a></p> -->
