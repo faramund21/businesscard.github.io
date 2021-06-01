@@ -1,6 +1,6 @@
 @font-face {
   font-family: "PT Sans Narrow";
-  font-weight: normal;
+  font-weight: 0;
   font-style: normal;
   font-display: swap;
   src: url("fonts/pt-sans-narrow.woff2"), url("fonts/pt-sans-narrow.woff");
