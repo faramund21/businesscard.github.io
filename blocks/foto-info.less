@@ -69,59 +69,6 @@ img {
 	color: #000000;
 }
 
-// @import("blocks/page-header.less");
-	
-.page-header {
-	display: flex;
-	flex-direction: column;
-	
-	background-color: @darkgrey;
-	color: #ffffff;
-}
-
-// @import("blocks/main-nav.less");
-
-.main-nav__toggle {
-	outline: 5px solid rgba(255, 0, 0, .8);
-	outline-offset: -5px;
-}
-
-.main-nav__wrapper {
-	outline: 5px solid rgba(0, 255, 0, .8);
-	outline-offset: -5px;
-	
-}
-.main-nav__list {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.main-nav__list a {
-	color: #ffffff;
-}
-
-@media(min-device-width: @tablet-width) {
-	.main-nav__wrapper {
-		display: flex;
-		justify-content: space-between;
-		margin: 0 64px;
-	}
-	.main-nav__toggle {
-		display: none;
-	}
-}
-
-@media(min-device-width: @desktop-width) {
-	.main-nav__wrapper {
-		display: flex;
-		justify-content: space-between;
-		width: 1200px;
-		margin: 0 auto;
-	}
-
-}
-
 // @import("blocks/foto-info.less");
 
 .foto-info {
@@ -134,8 +81,6 @@ img {
 	@media(min-device-width: @desktop-width) {
 		max-width: 1200px;
 		padding: 0 120px;
-		margin: 0 auto;
-
 		display: grid;
 		grid-template-columns: 1fr 2fr;		
 	}
@@ -144,10 +89,8 @@ img {
 .foto-info__foto-location {
 	outline: 5px solid rgba(255, 255, 0, .8);
 	outline-offset: -5px;
-	
-	display: block;
-	margin: auto;
 
+	margin: 0;
 	padding: 0;
 }
 
@@ -155,13 +98,7 @@ img {
 .foto-info__name-list {
 	outline: 5px solid rgba(255, 255, 0, .8);
 	outline-offset: -5px;
-	
-	text-align: center;
 
-	@media(min-device-width: @tablet-width) {
-		text-align: start;
-	}
-	
 	margin: 0;
 	padding: 0;
 }
@@ -169,17 +106,11 @@ img {
 .foto-info__social-list {
 	outline: 5px solid rgba(255, 255, 0, .8);
 	outline-offset: -5px;
-	
-	display: flex;
-	justify-content: center;
+
 	
 	margin: 0;
 	padding: 0;
 	list-style: none;
-}
-
-.social-list__item {
-	margin: 0 5px;
 }
 
 .foto-info__line {
@@ -193,21 +124,8 @@ img {
 .foto-info__contact-list {
 	outline: 5px solid rgba(255, 255, 0, .8);
 	outline-offset: -5px;
-		
+	
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	
-	@media(min-device-width: @tablet-width) {
-		display: flex;
-		justify-content: space-between;		
-	}
-}
-
-.contact-list__item {
-	text-align: center;
-	
-	@media(min-device-width: @tablet-width) {
-		text-align: start;
-	}
 }
