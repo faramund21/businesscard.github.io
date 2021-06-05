@@ -7,7 +7,7 @@
 
 // Viewports
 
-@tablet-width: 1000px;
+@tablet-width: 768px;
 @desktop-width: 1200px;
 @mobile-width-only: 767px;
 
@@ -105,11 +105,11 @@ img {
 	color: #ffffff;
 }
 
-@media(min-width: @tablet-width) {
+@media(min-device-width: @tablet-width) {
 	.main-nav__wrapper {
 		display: flex;
 		justify-content: space-between;
-		width: 640px;
+		width: 640;
 		margin: 0 auto;
 	}
 	.main-nav__toggle {
@@ -117,11 +117,45 @@ img {
 	}
 }
 
-@media(min-width: @desktop-width) {
+@media(min-device-width: @desktop-width) {
 	.main-nav__wrapper {
 		display: flex;
 		justify-content: space-between;
 		width: 1200px;
 		margin: 0 auto;
 	}
+
+}
+
+// @import("blocks/foto-info.less");
+
+.foto-info {
+	background-color: @darkgrey;
+	color: #ffffff;
+}
+
+.foto-info__foto-location {
+	outline: 5px solid rgba(255, 255, 0, .8);
+	outline-offset: -5px;
+}
+
+
+.foto-info__name-list {
+	outline: 5px solid rgba(255, 255, 0, .8);
+	outline-offset: -5px;
+}
+
+.foto-info__social-list {
+	outline: 5px solid rgba(255, 255, 0, .8);
+	outline-offset: -5px;
+}
+
+.foto-info__line {
+	outline: 5px solid rgba(0, 255, 0, .8);
+	outline-offset: -5px;
+}
+
+.foto-info__contact-list {
+	outline: 5px solid rgba(255, 255, 0, .8);
+	outline-offset: -5px;
 }
