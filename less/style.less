@@ -48,7 +48,7 @@ img {
 	border: 0;
 	padding: 0;
 	white-space: nowrap;
-	clip-path: insert(100%)
+	clip-path: insert(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
@@ -81,8 +81,42 @@ img {
 
 // @import("blocks/main-nav.less");
 
-.main-nav {
+.main-nav__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-nav__list {
+	color: #ffffff;
+}
+
+@media(min-width: @tablet-width) {
+	.main-nav__wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 640px;
+		margin: 0 auto;
+	}
+
+@media(min-width: @desktop-width) {
+	.main-nav__wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 640px;
+		margin: 0 auto;
+	}
 	
-	
-	
+@media(min-width: @tablet-width) {
+	.main-nav__wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 640px;
+		margin: 0 auto;
+	}
+}
+
+// @import("blocks/nav-list.less");
+
+.nav-list {
 }
