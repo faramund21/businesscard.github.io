@@ -1,9 +1,11 @@
 @font-face {
+  font-family: Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
+  font-family: Courier New, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -28,7 +30,7 @@ img {
 .page {
   height: 100%;
   font-size: 18px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 27px;
 }
 .page__body {
@@ -239,8 +241,6 @@ img {
   padding: 0;
   list-style: none;
   display: block;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 }
 @media (min-device-width: 767px) {
   .contact-list {
@@ -265,8 +265,6 @@ img {
   text-align: center;
   margin: 10% 0 0 0;
   padding: 0;
-  outline: 5px solid rgba(255, 255, 0, 0.8);
-  outline-offset: -5px;
 }
 @media (min-device-width: 768px) {
   .contact-list__item {
