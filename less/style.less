@@ -7,30 +7,22 @@
 
 // Viewports
 
-@tablet-width: 768px;
+@tablet-width: 1200px;
 @desktop-width: 1200px;
 @mobile-width-only: 767px;
 
 // @import("global/fonts.less");
 
 @font-face {
-	font-family: "PT Sans Narrow";
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
-	src:
-		url("fonts/pt-sans-narrow.woff2"),
-		url("fonts/pt-sans-narrow.woff");
 }
 
 @font-face {
-	font-family: "PT Sans Narrow";
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
-	src:
-		url("fonts/pt-sans-narrow-bold.woff2") format("woff2"),
-		url("fonts/pt-sans-narrow-bold.woff") format("woff");
 }
 
 // @import("global/global.less");
@@ -64,7 +56,7 @@ img {
 	line-height: 27px;
 }
 
-.page__body {
+.page__body {	
 	min-height: 100%;
 	margin: 0;
 	background-color: @lightgrey;
@@ -82,7 +74,7 @@ img {
 
 
 .main-nav__list {
-	height: 3vh;
+	height: 5vh;
 	
 	margin: 0;
 	padding: 0 64px;
@@ -130,9 +122,12 @@ img {
 // @import("blocks/foto-info.less");
 
 .foto-info {
+	display: block;	
+	justify-content: flex-end;
 	background-color: @lightgrey;
 	color: #A4A5A7;
-	height: 97vh;
+	height: 95vh;
+	margin: 0 50px;
 	
 	
 	@media(min-width: @tablet-width) and (orientation: landscape) {
@@ -140,24 +135,32 @@ img {
 	}
 	@media(min-width: @desktop-width) {
 		max-width: 100%;
-		padding: 0 auto;
+		padding: 0;
+		margin: 0;
 
 		display: grid;
-		grid-template-columns: 1fr 2fr;		
-		align-items: center;
+		flex-direction: column;	
+		grid-template-columns: 31% 1fr;
+		justify-content: center;
 	}
 }
 
 .foto-info__foto-location {
 	display: block;
-	margin: auto;
-	padding: 12% 0 12% 0;
+	padding: 10% 0 10% 0;
 	justify-content: center;
+
+	@media(min-width: @desktop-width) {
+		padding: 40% 0 12% 0;
+		background-color: @darkgrey;
+	}	
+	
 }
 
 .foto-info__foto-location img {
-	display: block;
-	margin:auto;
+	display: flex;
+	
+	margin: auto;
 	width: 20rem;
 	
 	@media(min-width: @desktop-width) {
@@ -166,8 +169,8 @@ img {
 }
 
 .foto-info__description {
-	padding: 0 60px;
 	font-size: 200%;
+
 	
 	@media(min-width: @tablet-width) and (orientation: landscape) {
 		font-size: 180%;
@@ -175,6 +178,7 @@ img {
 	@media(min-width: @desktop-width) {
 		font-size: 100%;
 		padding: 250px 0 0 60px;
+		width: 890px;
 	}
 }
 
@@ -266,9 +270,9 @@ img {
 /* Разделительная линия */
 .line {
 	display: flex;
-	margin: 10% 0 10% 0;
+	margin: 5% 0 10% 0;
 	
-	@media(min-width: @desktop-width) and (orientation: landscape) {
+	@media(min-width: @desktop-width) {
 		margin: 15% 0 3% 0;
 	}
 }
@@ -307,10 +311,12 @@ img {
 	
 	@media(min-width: @tablet-width) and (orientation: landscape) {
 		width: 170px;
+		font-size: 75%
 	}
-	@media(min-width: @desktop-width) and (orientation: landscape) {
+	@media(min-width: @desktop-width) {
 		text-align: start;
 		margin: 0;
+		font-size: 85%
 	}
 }
 
@@ -318,9 +324,4 @@ img {
 .contact-list__item--active a:focus,
 .contact-list__item--active a:active {
 	color: #E0A80B;
-}
-
-.contact-list__item h3 {
-	margin: 0 0 3% 0;
-	padding: 0;
 }
