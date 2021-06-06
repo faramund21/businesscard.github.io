@@ -7,8 +7,8 @@
 
 // Viewports
 
-@tablet-width: 1200px;
-@desktop-width: 1200px;
+@tablet-width: 768px;
+@desktop-width: 1400px;
 @mobile-width-only: 767px;
 
 // @import("global/fonts.less");
@@ -296,28 +296,48 @@ img {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	display: block;
 	
-	@media(min-width: @tablet-width) and (orientation: landscape) {
+	outline: 5px solid rgba(0, 255, 0, .8);
+	outline-offset: -5px;
+}
+
+.contact-list {	
+	@media(min-width: @mobile-width-only) {	
+		display: block;
+		justify-content: center;
+	}
+	
+	@media(min-width: @tablet-width) {	
 		display: flex;
-		justify-content: space-between
+		justify-content: space-around;
 	}
 }
 
 .contact-list__item {
+
 	font-size: 85%;
 	text-align: center;
 	margin: 10% 0 0 0;
 	padding: 0;
 	
-	@media(min-width: @tablet-width) and (orientation: landscape) {
-		width: 170px;
-		font-size: 75%
+	@media(min-width: @tablet-width) {
+		
+		margin: 0;
+		width: 210px;
+		font-size: 50%
+		
+		
 	}
+	
 	@media(min-width: @desktop-width) {
 		text-align: start;
 		margin: 0;
+		width: 400px;
 		font-size: 85%
 	}
+	outline: 5px solid rgba(255, 255, 0, .8);
+	outline-offset: -5px;
 }
 
 .contact-list__item--active a:hover,
